@@ -1,6 +1,6 @@
-# Portfolio Content Source of Truth (Mihir Chauhan)
+# Portfolio Content Source of Truth (Dilshad Ali)
 
-Use this file as the complete source of truth for all website sections: About, Experience, Projects, Publications, Skills, Links, and Contact.
+Use this file as the complete source of truth for all website sections: About, Experience, Projects, Skills, Links, and Contact.
 Do not invent new experiences or metrics. Use what is written here.
 Prefer concise bullets, strong action verbs, and quantified impact where available.
 
@@ -8,171 +8,61 @@ Prefer concise bullets, strong action verbs, and quantified impact where availab
 
 ## Basic Info
 
-**Name:** Mihir Dharmendra Chauhan (Preferred: Mihir)  
-**Role:** Applied AI & Analytics Co-op at SharkNinja · M.S. Data Science, University of Colorado Boulder (May 2026)  
-**Email:** mihirchauhan951@gmail.com  
-**Phone:** +1 720-813-5491  
-**Portfolio:** https://chauhan-mihir.vercel.app/  
-**LinkedIn:** https://www.linkedin.com/in/mihirchauhan10/  
+**Name:** Dilshad Ali
+**Role:** BS Data Science Student, University of IMSciences (IMS), Peshawar
+**Email:** dilshadali3d@gmail.com
+**Phone:** +92 303 9771130
+**Portfolio:** (add once deployed on Vercel)
+**LinkedIn:** https://www.linkedin.com/in/dilshad-ali-259609285/
+**GitHub:** https://github.com/Dilshadalii
 
 ---
 
 ## Short Bio (Use on Homepage)
 
-I am Mihir Chauhan, a Data Science graduate student at CU Boulder with industry and research experience building end-to-end AI systems. My work spans applied machine learning, LLM-driven pipelines, data engineering, and cloud-native infrastructure. I have built production-style platforms like CloudSense (AI code review automation) and an AI Interview Coach, and I have also worked on clinical NLP and LLM infographic generation as a Research Intern at CU Anschutz. I enjoy shipping practical AI solutions and communicating results clearly to both technical and non-technical audiences.
+I am Dilshad Ali, a BS Data Science student at the University of IMSciences (IMS), Peshawar, with a strong interest in machine learning, deep learning, and computer vision. I enjoy the research side of AI and have worked on practical projects such as a real-time posture correction system for diabetic patients using computer vision, and a house price prediction model using regression techniques. I am continuously building my skills toward a career in data science.
 
 ---
 
 ## Experience
 
-### Applied AI & Analytics Co-op — SharkNinja (Aug 2026 - present)
-- Just started — no shipped work to list yet. Do not invent bullets for this role.
-
-### AI / Data Engineering Intern — Kobeyo (Internship) (May 2025 - Aug 2025)
-- Built a large-scale business data pipeline focused on the Los Angeles market.
-- Automated data collection using Google Places API, Apify, Selenium, and Playwright.
-- Implemented AI workflows for skill tagging and email classification.
-- Used retrieval and structured storage (GraphRAG-style approach and Supabase) to support downstream search and intelligence.
-- Delivered system components aligned with real business requirements and stakeholder needs.
-
-### Research Intern — CU Anschutz, LARK Lab (Department of Biomedical Informatics) (Jan 2026 - present)
-- Worked on clinical NLP and LLM-driven systems.
-- Built pipelines for HIV infographic generation using LLM prompting workflows.
-- Explored bias-mitigation considerations in AI outputs.
-- Prototyped an improved infographic pipeline using HTML-first generation and conversion to SVG for layout consistency.
-- Collaborated closely with research mentor (Dr. Yanjun Gao) and iterated on prompting experiments.
-
-### Honda 99P Labs Debate Agent (Multi-Agent System) (Capstone project) (Sept 2025 - Dec 2025)
-**Highlights:**
-- Built/participated in a multi-agent debate system with retrieval support.
-- Implemented structured reasoning workflows and instrumentation patterns (Graphiti-style).
-
-### Data Science Intern — CodSoft (Aug 2023 – Sept 2023)
-- Completed three applied ML projects: Sales Prediction, Movie Prediction, Titanic Survival Prediction.
-- Performed data preprocessing, feature engineering, and model training/evaluation.
-- Built end-to-end notebooks/pipelines to generate predictions and summarize insights.
+### AI/ML Intern — Khyber Pakhtunkhwa Information Technology Board (KPITB) (May 2026 – Jul 2026)
+- Worked on a computer vision project focused on brain angiography image recognition to help identify abnormalities.
+- Applied Python and TensorFlow for model development.
+- Gained hands-on experience with medical imaging data and deep learning workflows.
 
 ---
 
-## Featured Projects (High Priority)
+## Featured Projects
 
-### CloudSense — AI-Powered Code Review Platform
-**Tech:** FastAPI (Python, async), React 18 + TypeScript, Tailwind, shadcn/ui, Redis + RQ, PostgreSQL, Docker, Terraform  
-**AWS:** ECS Fargate, ECR, RDS (multi-AZ), ElastiCache, S3 + CloudFront, Secrets Manager, CloudWatch, VPC + ALB  
-**Integrations:** GitHub webhooks + API, Semgrep, Ruff, Bandit, Black, OpenAI GPT suggestions/patches  
-**Highlights:**
-- Built an end-to-end platform to reduce manual code review with automated checks plus AI recommendations.
-- Implemented webhook signature verification, JWT auth with bcrypt, multi-tenant repo support, and real-time dashboards.
-- Designed cloud architecture with observability and secure secret management.
-
-### AI Interview Coach
-**Tech:** LangChain, Streamlit, FastAPI  
-**Highlights:**
-- Built an interview simulation product that generates job-description-specific questions and feedback.
-- Designed workflows for structured scoring and improvement recommendations.
-- Focused on practicality and user experience for interview preparation.
-
-### Asteroid Collision Prediction
-
-**Project Link:** https://mihirchauhan0709.github.io/ml-project/
-
+### Posture Correction System for Diabetic Exercise
+**Tech:** Python, OpenCV, MediaPipe, CNN, medical exercise datasets
 **Overview:**
-Analyzed asteroid datasets to classify objects, assess collision risk levels, and explore predictive modeling approaches for early warning insights.
+Built a computer vision prototype that uses real-time webcam input to help diabetic patients perform prescribed exercises with correct form. The system uses MediaPipe for body landmark/pose detection, calculates joint angles in real time, and uses a CNN trained on medical exercise data to classify whether the posture is correct or incorrect — giving the user live feedback.
+**Status:** Working prototype
+**Skills Demonstrated:** Computer Vision, Pose Estimation, CNNs, Real-time Video Processing, Healthcare-focused ML
 
-**Work Included:**
-- Performed data preparation, cleaning, and exploratory data analysis on asteroid data.
-- Implemented multiple machine learning techniques including:
-  - Principal Component Analysis (PCA)
-  - Clustering
-  - Association Rule Mining
-  - Decision Trees
-  - Naïve Bayes
-  - Support Vector Machines
-  - Regression models
-- Compared model approaches to better understand asteroid risk patterns.
-
-**Skills Demonstrated:**
-Machine Learning, Statistical Modeling, Feature Reduction, Classification, Unsupervised Learning, EDA
-
-**Why This Project Matters:**
-Demonstrates strong foundational ML knowledge across both supervised and unsupervised techniques while applying data science to a real-world risk prediction problem.
-
-
-### Football Lineup Optimization (Data Mining Final Project)
-**Data:** Last 4 La Liga seasons from fbref.com  
-**Highlights:**
-- Cleaned and normalized multi-header football tables and encoded player/team names to UTF.
-- Merged player and team data into a comprehensive dataset for modeling.
-- Built predictive models for goals and assists; clustered players for insights; generated Best XI for each season.
-- Implemented Gradient Boosting classification for player role archetypes (example: workhorse, playmaker).
-- Built match win probability modeling using past records, home/away stats, and player performance.
-
-### Job Vacancies Dashboard for Jordan (Hackathon Project)
-**Tech:** Power BI, Python, Azure Translate API  
-**Highlights:**
-- Addressed youth unemployment by building a dashboard to explore job availability by district, enterprise size, and role.
-- Translated an Arabic dataset to English using Azure Translate API and Python scripting.
-- Cleaned and simplified the dataset to improve usability and clarity.
-
----
-
-## Additional Projects
-
-### Yoga Posture Detection and Correction (Capstone + Platform)
-**Tech:** Neural networks, TensorFlow / TensorFlow.js, Computer Vision  
-**Highlights:**
-- Led a team to build a yoga pose estimation model with 96.5% accuracy across 12 poses.
-- Cleaned and structured a dataset of 3,600 images to improve data quality and model performance.
-- Built an interactive platform where users create accounts, track best pose duration times, and compare with friends.
-- Implemented real-time correction feedback to improve user posture accuracy.
-
-### Sign Language Recognition Model
-**Tech:** LSTM, Computer Vision  
-**Highlights:**
-- Built a sign language recognition model that translates gestures into English text.
-- Achieved 92% accuracy using an LSTM neural network pipeline.
-
-### Chatbot System for College Management
-**Tech:** NLP, ANN, JSON, Tkinter  
-**Highlights:**
-- Developed a chatbot to assist new students with department queries and course information.
-- Built an interface and intent-response logic using JSON and Tkinter.
-
----
-
-## Publications
-
-### Research Paper: Yoga Pose Detection and Correction
-- Published paper associated with the Yoga Posture Detection and Correction project.
-- Link: https://journals.stmjournals.com/joosdt/article=2024/view=161704/
+### House Price Prediction
+**Tech:** Python, Linear Regression, Pandas, Scikit-learn
+**Overview:**
+Built a regression model to predict house prices using the classic Kaggle House Prices dataset. Covered data cleaning, feature handling, and model training using linear regression.
+**Skills Demonstrated:** Regression Modeling, Data Preprocessing, EDA, Scikit-learn
 
 ---
 
 ## Skills
 
 ### Languages
-Python, R, C, C++, Java, JavaScript, SQL
+Python, SQL, C++
 
 ### ML / AI
-Machine Learning, Neural Networks, Deep Learning, NLP, Time-Series Analysis  
-Scikit-learn, TensorFlow, Keras, PyTorch
+TensorFlow, Keras, Scikit-learn
 
 ### Data & Visualization
-Pandas, NumPy, Data Visualization, Trend Analysis, Feature Engineering, EDA  
-Power BI, Tableau, Excel
+Pandas, NumPy, Power BI, Matplotlib, Seaborn
 
 ### Databases / Tools
-MongoDB, PostgreSQL, Redis, GitHub, Linux, R Studio, Weka
-
-### Cloud / DevOps
-AWS, Google Cloud, Microsoft Azure  
-Docker, Terraform
-
-### Web
-HTML, CSS, Node.js
-
-### Professional
-Communication, leadership, project management, report writing, presenting findings to technical and non-technical audiences
+PostgreSQL, Git/GitHub, Jupyter, VS Code, Linux
 
 ---
 
@@ -182,22 +72,19 @@ Build a portfolio website that includes:
 1. Home (Headline + short bio + featured projects)
 2. About (longer bio + interests)
 3. Experience (timeline or cards)
-4. Projects
-   - Featured Projects (CloudSense, AI Interview Coach, Football Lineup Optimization, Jordan Dashboard)
-   - Additional Projects (Yoga, Sign Language, Chatbot, Debate Agent)
-5. Publications (Yoga paper with link)
-6. Skills (grouped)
-7. Contact (email, phone, LinkedIn, portfolio link)
+4. Projects (Posture Correction System, House Price Prediction)
+5. Skills (grouped)
+6. Contact (email, phone, LinkedIn, GitHub)
 
 Design notes:
 - Keep it clean and modern, easy to scan.
-- Prefer action-oriented bullets and project cards with tags (AI, ML, Cloud, LLM, Data Engineering).
-- Include external links for paper + LinkedIn + portfolio.
+- Prefer action-oriented bullets and project cards with tags (AI, ML, Computer Vision, Data Science).
+- Include external links for LinkedIn and GitHub.
 - Do not add false metrics or fake employers.
 
 ---
 
 ## Optional Tagline Ideas (Pick one)
-- Building end-to-end AI systems: from data pipelines to deployed products
-- Applied ML and LLM systems with cloud-native engineering
-- Research + industry experience in AI, data engineering, and scalable systems
+- Exploring machine learning, deep learning, and computer vision
+- Building practical AI solutions with a research mindset
+- Data science student passionate about computer vision and healthcare AI

@@ -1,178 +1,59 @@
 // ============================================
-//   MIHIR CHAUHAN — MODEL CARD PORTFOLIO 2026
+//   DILSHAD ALI — MODEL CARD PORTFOLIO 2026
 // ============================================
 
 // ===== DATA =====
 const data = {
 
-    // §02 Training run — most recent first (Updated August 2026)
+    // §02 Experience — most recent first
     experience: [
         {
-            id: 'RUN-06',
-            status: 'running',
-            date: 'AUG 2026 — PRESENT',
-            role: 'Applied AI & Analytics Co-op',
-            org: 'SharkNinja',
-            loc: '',
-            points: [],
-            tags: ['Applied AI', 'Analytics']
-        },
-        {
-            id: 'RUN-05',
+            id: 'RUN-01',
             status: 'complete',
-            date: 'JAN 2026 — MAY 2026',
-            role: 'Research Intern',
-            org: 'CU Anschutz · LARK Lab, Dept. of Biomedical Informatics',
-            loc: 'Aurora, CO',
+            date: 'MAY 2026 — JUL 2026',
+            role: 'AI/ML Intern',
+            org: 'Khyber Pakhtunkhwa IT Board (KPITB)',
+            loc: 'Peshawar, Pakistan',
             points: [
-                'Designed rubric-based evaluation pipelines for LLM outputs in clinical annotation workflows, with QA checks and error analysis to surface failure modes and clinical relevance gaps.',
-                'Ran systematic prompt-engineering experiments; refined templates, structured outputs, and guardrails to improve reliability of generated clinical artifacts.',
-                'Built multi-step LLM pipelines for patient-facing clinical infographic generation (template selection → JSON blueprint → SVG composition) under strict layout constraints.'
+                'Worked on a computer vision project focused on brain angiography image recognition to help identify abnormalities.',
+                'Applied Python and TensorFlow for model development.',
+                'Gained hands-on experience with medical imaging data and deep learning workflows.'
             ],
-            tags: ['LLM Evaluation', 'Prompt Engineering', 'Clinical NLP', 'Guardrails']
-        },
-        {
-            id: 'RUN-04',
-            status: 'complete',
-            date: 'SEPT 2025 — DEC 2025',
-            role: 'AI Engineer (Capstone)',
-            org: 'Honda 99P Labs',
-            loc: 'Boulder, CO',
-            points: [
-                'Designed a multi-agent debate engine with hybrid retrieval, vector databases, and curated evidence packs; improved citation accuracy and response relevance.',
-                'Built the FastAPI + Uvicorn backend with advanced RAG and context engineering; deployed on AWS ECS Fargate.',
-                'Used AWS Secrets Manager and CloudWatch for secure configuration and observability.'
-            ],
-            tags: ['Multi-Agent', 'RAG', 'AWS ECS Fargate', 'FastAPI']
-        },
-        {
-            id: 'RUN-03',
-            status: 'complete',
-            date: 'MAY 2025 — AUG 2025',
-            role: 'Junior Data Scientist Intern',
-            org: 'Kobeyo',
-            loc: 'Boulder, CO',
-            points: [
-                'Improved production classification accuracy by building an MLOps pipeline for a custom BERT model with human-in-the-loop feedback — continuous fine-tuning and structured retraining cadences that sustained accuracy gains in a live environment.',
-                'Cut query time by 50% and expanded business data coverage by 40% by building a full-stack Python ingestion API with async Playwright scraping on a Supabase (PostgreSQL) backend.',
-                'Applied LLMs with prompt engineering to automate skill-tagging and structured job-data extraction at scale.'
-            ],
-            tags: ['MLOps', 'BERT', 'Human-in-the-Loop', 'PostgreSQL']
-        },
-        {
-            id: 'RUN-02',
-            status: 'complete',
-            date: 'AUG 2023 — SEPT 2023',
-            role: 'Data Science Intern',
-            org: 'CodSoft',
-            loc: 'Remote',
-            points: [
-                'Completed three applied ML projects end to end: sales prediction, movie prediction, and Titanic survival classification — preprocessing, feature engineering, training, and evaluation.'
-            ],
-            tags: ['Supervised Learning', 'Feature Engineering']
+            tags: ['Computer Vision', 'Python', 'TensorFlow', 'Medical Imaging']
         }
     ],
 
-    // §03 Evaluations — featured
+    // §03 Projects
     featuredProjects: [
         {
-            title: 'AgentSquared',
-            subtitle: 'No-code AI agent platform · HackCU 2026 → independent project',
-            description: 'Lets small businesses spin up a trained AI agent in under 60 seconds from their website and documents. FastAPI + Next.js, async crawling and RAG ingestion, three agent types (support QA, social monitoring via Bluesky AT Protocol with Gemini sentiment analysis, proactive marketing), deployed to a Vultr VPS with Nginx + PM2.',
+            title: 'Posture Correction System for Diabetic Exercise',
+            subtitle: 'Real-time computer vision prototype',
+            description: 'A computer vision prototype that uses real-time webcam input to help diabetic patients perform prescribed exercises with correct form. Uses MediaPipe for body landmark and pose detection, calculates joint angles in real time, and uses a CNN trained on medical exercise data to classify whether the posture is correct or incorrect — giving live feedback.',
             metrics: [
-                { v: '<60s', k: 'AGENT SPIN-UP' },
-                { v: '3', k: 'AGENT TYPES' },
-                { v: '24h', k: 'V1 BUILD TIME' }
+                { v: 'REAL-TIME', k: 'WEBCAM FEEDBACK' },
+                { v: 'CNN', k: 'POSTURE CLASSIFICATION' }
             ],
-            tags: ['FastAPI', 'Next.js', 'RAG', 'Gemini', 'Multi-Agent'],
-            links: [
-                { name: 'HOW WE BUILT IT — BLOG ↗', url: 'https://medium.com/@mihirchauhan951/we-built-a-no-code-ai-agent-platform-in-24-hours-99c6fffc4010' }
-            ]
+            tags: ['Python', 'OpenCV', 'MediaPipe', 'CNN'],
+            links: []
         },
         {
-            title: 'CodeSense',
-            subtitle: 'AI-powered code review platform',
-            description: 'Automated code analysis and patch suggestions on every push: GitHub webhooks with signature verification, security scanning (Semgrep, Ruff, Bandit, Black), GPT-generated patches, JWT auth, async Redis RQ workers, multi-tenant repos. Cloud architecture provisioned with Terraform on AWS — ECS Fargate, RDS, ElastiCache, S3 + CloudFront.',
+            title: 'House Price Prediction',
+            subtitle: 'Regression on the classic Kaggle dataset',
+            description: 'Built a regression model to predict house prices using the classic Kaggle House Prices dataset. Covered data cleaning, feature handling, and model training using linear regression.',
             metrics: [
-                { v: '4', k: 'SECURITY SCANNERS' },
-                { v: 'IaC', k: 'TERRAFORM-PROVISIONED' },
-                { v: 'MULTI', k: 'TENANT REPO SUPPORT' }
+                { v: 'LINEAR', k: 'REGRESSION MODEL' }
             ],
-            tags: ['FastAPI', 'React 18', 'TypeScript', 'Terraform', 'AWS'],
-            video: 'assets/codesense-demo.mp4',
-            links: [
-                { name: 'FULL DEMO ↗', url: 'https://drive.google.com/file/d/18gwwV5BbdjfJL-JNVAxZo1u_zzwaJxcx/view?usp=sharing' }
-            ]
-        },
-        {
-            title: 'AI Interview Coach',
-            subtitle: 'LLM interview simulation',
-            description: 'Generates job-description-specific interview questions, scores answers against structured rubrics, and returns improvement recommendations. Built with LangChain, Streamlit, and FastAPI — designed around how people actually prepare.',
-            metrics: [
-                { v: 'JD→Q', k: 'TAILORED QUESTIONS' },
-                { v: 'RUBRIC', k: 'STRUCTURED SCORING' }
-            ],
-            tags: ['LangChain', 'Streamlit', 'FastAPI', 'LLM'],
-            links: [
-                { name: 'LIVE DEMO ↗', url: 'https://ai-interview-coach-kyz6kd8j8pu4feagzvj5lo.streamlit.app/' },
-                { name: 'GITHUB ↗', url: 'https://github.com/Mihirchauhan0709/ai-interview-coach' }
-            ]
-        },
-        {
-            title: 'Football Lineup Optimization',
-            subtitle: 'Data mining on 4 seasons of La Liga',
-            description: 'Cleaned and merged multi-header player/team tables from fbref.com, predicted goals and assists, clustered player archetypes with gradient boosting, generated a Best XI per season, and modeled match win probability from historical and home/away context.',
-            metrics: [
-                { v: '4', k: 'SEASONS ANALYZED' },
-                { v: 'XI×4', k: 'BEST LINEUPS GENERATED' }
-            ],
-            tags: ['Python', 'Gradient Boosting', 'Clustering'],
-            links: [
-                { name: 'PROJECT ↗', url: 'https://mihirchauhan0709.github.io/Data_mining_Project/' },
-                { name: 'GITHUB ↗', url: 'https://github.com/Mihirchauhan0709/Data_mining_Project' }
-            ]
-        }
-    ],
-
-    // §03 Evaluations — additional runs
-    additionalProjects: [
-        {
-            title: 'Yoga Posture Detection & Correction',
-            description: 'Led a team building pose estimation across 12 poses with real-time correction feedback, deployed via TensorFlow.js. 3,600+ images processed; published as a research paper.',
-            metric: '96.5% ACCURACY',
-            links: [
-                { name: 'PAPER ↗', url: 'https://journals.stmjournals.com/joosdt/article=2024/view=161704/' },
-                { name: 'GITHUB ↗', url: 'https://github.com/Mihirchauhan0709/Yoga_Pose_Estimation' }
-            ]
-        },
-        {
-            title: 'Asteroid Collision Prediction',
-            description: 'Classified asteroid risk with PCA, clustering, association rules, decision trees, naïve Bayes, SVMs, and regression — supervised and unsupervised, compared head to head.',
-            metric: '7 ML METHODS',
-            links: [{ name: 'PROJECT ↗', url: 'https://mihirchauhan0709.github.io/ml-project/' }]
-        },
-        {
-            title: 'Sign Language Recognition',
-            description: 'LSTM pipeline translating sign-language gestures into English text, built on self-collected and structured gesture data.',
-            metric: '92% ACCURACY',
-            links: [{ name: 'GITHUB ↗', url: 'https://github.com/Mihirchauhan0709/sign_language_recognition' }]
-        },
-        {
-            title: 'Job Vacancies Dashboard — Jordan',
-            description: 'Hackathon Power BI dashboard targeting youth unemployment: translated an Arabic dataset with Azure Translate + Python, then mapped jobs by district, enterprise size, and role.',
-            metric: 'AR→EN PIPELINE',
+            tags: ['Python', 'Scikit-learn', 'Pandas'],
             links: []
         }
     ],
 
-    // §04 Capabilities
+    // §04 Skills
     skills: [
-        { group: 'LANGUAGES', items: ['Python', 'SQL', 'JavaScript / TypeScript', 'R', 'Java', 'C / C++'] },
-        { group: 'ML / AI', items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'LLM Evaluation', 'Prompt Engineering', 'RAG', 'Multi-Agent Systems', 'LangChain', 'NLP', 'Computer Vision'] },
-        { group: 'DATA', items: ['Pandas', 'NumPy', 'Feature Engineering', 'EDA', 'Power BI', 'Tableau'] },
-        { group: 'BACKEND & DATABASES', items: ['FastAPI', 'PostgreSQL', 'Redis', 'Supabase', 'MongoDB', 'REST APIs'] },
-        { group: 'CLOUD & DEVOPS', items: ['AWS', 'ECS Fargate', 'RDS · S3', 'CloudWatch', 'Secrets Manager', 'Docker', 'Terraform', 'GCP', 'Azure', 'CI/CD'] },
-        { group: 'WEB', items: ['React', 'Next.js', 'Node.js', 'HTML / CSS'] }
+        { group: 'LANGUAGES', items: ['Python', 'SQL', 'C++'] },
+        { group: 'ML / AI', items: ['TensorFlow', 'Keras', 'Scikit-learn'] },
+        { group: 'DATA & VISUALIZATION', items: ['Pandas', 'NumPy', 'Power BI', 'Matplotlib', 'Seaborn'] },
+        { group: 'DATABASES & TOOLS', items: ['PostgreSQL', 'Git / GitHub', 'Jupyter', 'VS Code', 'Linux'] }
     ]
 };
 
@@ -215,12 +96,6 @@ function renderFeatured() {
                     <p class="eval-sub">${p.subtitle}</p>
                 </div>
             </header>
-            ${p.video ? `
-            <div class="eval-video">
-                <video controls muted playsinline preload="metadata" src="${p.video}"
-                       aria-label="${p.title} demo video"></video>
-                <span class="video-caption mono">PRODUCT DEMO · 3 MIN</span>
-            </div>` : ''}
             <p class="eval-desc">${p.description}</p>
             <div class="metric-row">
                 ${p.metrics.map(m => `
@@ -234,29 +109,6 @@ function renderFeatured() {
                 ${p.links.length ? `<div class="link-row">${p.links.map(l =>
                     `<a class="text-link mono" href="${l.url}" target="_blank" rel="noopener noreferrer">${l.name}</a>`).join('')}</div>` : ''}
             </footer>
-        </article>
-    `).join('');
-
-    // If a demo file is missing (e.g., not yet copied into assets/),
-    // remove the player — the external demo link still works.
-    el.querySelectorAll('.eval-video video').forEach(v => {
-        v.addEventListener('error', () => {
-            const block = v.closest('.eval-video');
-            if (block) block.remove();
-        });
-    });
-}
-
-function renderAdditional() {
-    const el = document.getElementById('additional-projects');
-    if (!el) return;
-    el.innerHTML = data.additionalProjects.map(p => `
-        <article class="mini-card reveal">
-            <span class="mini-metric mono">${p.metric}</span>
-            <h4 class="mini-title">${p.title}</h4>
-            <p class="mini-desc">${p.description}</p>
-            ${p.links.length ? `<div class="link-row">${p.links.map(l =>
-                `<a class="text-link mono" href="${l.url}" target="_blank" rel="noopener noreferrer">${l.name}</a>`).join('')}</div>` : ''}
         </article>
     `).join('');
 }
@@ -353,7 +205,6 @@ function setupNav() {
         });
     });
 
-    // Active section highlighting
     const sections = document.querySelectorAll('section[id]');
     const links = document.querySelectorAll('.nav-link');
     const spy = new IntersectionObserver(entries => {
@@ -372,6 +223,9 @@ function setupForm() {
     const status = document.getElementById('form-status');
     if (!form) return;
 
+    // NOTE: This EmailJS key/service/template belong to Mihir's account —
+    // the form will not actually send email until you set up your own
+    // EmailJS account and replace these three values.
     const EMAILJS_PUBLIC_KEY = 'GhFtq6Okk97dn7Uf5';
     const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -395,7 +249,6 @@ function setupForm() {
         return !msg;
     };
 
-    // Validate on blur, clear the error as soon as the fix is typed
     Object.keys(validators).forEach(field => {
         const input = form.elements[field];
         input.addEventListener('blur', () => {
@@ -411,7 +264,6 @@ function setupForm() {
         status.textContent = '';
         status.className = 'form-status mono';
 
-        // Honeypot: real visitors never see or fill this field
         if (form.elements.company && form.elements.company.value) return;
 
         const fields = Object.keys(validators);
@@ -424,7 +276,7 @@ function setupForm() {
         }
 
         if (typeof emailjs === 'undefined') {
-            status.textContent = '✗ EMAIL SERVICE UNAVAILABLE — email me directly at mihirchauhan951@gmail.com';
+            status.textContent = '✗ EMAIL SERVICE UNAVAILABLE — email me directly at dilshadali3d@gmail.com';
             status.className = 'form-status mono err';
             return;
         }
@@ -452,7 +304,7 @@ function setupForm() {
             }
         } catch (err) {
             console.error('Contact form error:', err);
-            status.textContent = '✗ SEND FAILED — email me directly at mihirchauhan951@gmail.com';
+            status.textContent = '✗ SEND FAILED — email me directly at dilshadali3d@gmail.com';
             status.className = 'form-status mono err';
         } finally {
             btn.textContent = original;
@@ -464,7 +316,6 @@ function setupForm() {
 // ===== AWARD LAYER =====
 const finePointer = window.matchMedia('(pointer: fine)').matches;
 
-// Boot sequence — once per session, skipped for reduced motion
 function runBoot(onDone) {
     const boot = document.getElementById('boot');
     const skip = reducedMotion || sessionStorage.getItem('mc-booted');
@@ -479,7 +330,7 @@ function runBoot(onDone) {
     const pctEl = document.getElementById('boot-pct');
     const fillEl = document.getElementById('boot-fill');
     const lines = [
-        'MIHIR.CHAUHAN — SYSTEM INIT',
+        'DILSHAD.ALI — SYSTEM INIT',
         'LOADING WEIGHTS ............. <span class="ok">OK</span>',
         'CALIBRATING TYPE ............ <span class="ok">OK</span>',
         'MOUNTING PROJECTS ........... <span class="ok">OK</span>',
@@ -509,18 +360,16 @@ function runBoot(onDone) {
     requestAnimationFrame(tick);
 }
 
-// Split hero name into letters for staggered entrance + kinetic type
 function splitHeroName() {
     const h1 = document.getElementById('hero-name');
     if (!h1) return;
     let idx = 0;
-    h1.innerHTML = ['Mihir', 'Chauhan'].map(word =>
+    h1.innerHTML = ['Dilshad', 'Ali'].map(word =>
         `<span class="hn-line" aria-hidden="true">${[...word].map(c =>
             `<span class="ch" style="--d:${(idx++ * 0.035).toFixed(3)}s">${c}</span>`).join('')}</span>`
     ).join('');
 }
 
-// Variable-font letters respond to cursor proximity (Archivo wght/wdth axes)
 function setupKineticName() {
     if (reducedMotion || !finePointer) return;
     const hero = document.querySelector('.hero');
@@ -548,7 +397,6 @@ function setupKineticName() {
     });
 }
 
-// "EMAIL ME" pill trails the pointer over the big contact CTA
 function setupCtaTip() {
     if (!finePointer) return;
     const cta = document.querySelector('.contact-big');
@@ -561,7 +409,6 @@ function setupCtaTip() {
     cta.addEventListener('pointerleave', () => tip.classList.remove('on'));
 }
 
-// Decode/scramble effect on labels as they enter the viewport
 function setupScramble() {
     const els = document.querySelectorAll('[data-scramble]');
     if (!els.length || reducedMotion || !('IntersectionObserver' in window)) return;
@@ -588,7 +435,6 @@ function setupScramble() {
     els.forEach(el => obs.observe(el));
 }
 
-// Reading progress bar (native scrolling everywhere else)
 function setupScrolling() {
     const progress = document.getElementById('progress');
     if (!progress) return;
@@ -604,13 +450,11 @@ function setupScrolling() {
     updateProgress();
 }
 
-// Duplicate marquee content for a seamless -50% loop
 function setupMarquee() {
     const track = document.getElementById('marquee-track');
     if (track) track.innerHTML += track.innerHTML;
 }
 
-// Magnetic pull on buttons
 function setupMagnetic() {
     if (reducedMotion || !finePointer) return;
     document.querySelectorAll('.btn, .theme-btn').forEach(el => {
@@ -624,7 +468,6 @@ function setupMagnetic() {
     });
 }
 
-// Subtle 3D tilt on the hero photo
 function setupTilt() {
     if (reducedMotion || !finePointer) return;
     const wrap = document.querySelector('.hero-photo-wrap');
@@ -639,7 +482,6 @@ function setupTilt() {
     wrap.addEventListener('pointerleave', () => { img.style.transform = ''; });
 }
 
-// Dark / light toggle, persisted
 function setupTheme() {
     const btn = document.getElementById('theme-btn');
     const meta = document.querySelector('meta[name="theme-color"]');
@@ -663,7 +505,6 @@ function setupTheme() {
     });
 }
 
-// Copy email address to clipboard
 function setupCopyEmail() {
     const btn = document.getElementById('copy-email');
     if (!btn || !navigator.clipboard) return;
@@ -682,12 +523,11 @@ function setupCopyEmail() {
     });
 }
 
-// Live Denver clock in the footer
 function setupClock() {
     const el = document.getElementById('local-time');
     if (!el) return;
     const fmt = new Intl.DateTimeFormat('en-US', {
-        timeZone: 'America/Denver', hour12: false,
+        timeZone: 'Asia/Karachi', hour12: false,
         hour: '2-digit', minute: '2-digit', second: '2-digit'
     });
     const tick = () => { el.textContent = fmt.format(new Date()); };
@@ -697,8 +537,8 @@ function setupClock() {
 
 function consoleEgg() {
     console.log(
-        '%c MIHIR.CHAUHAN %c You opened the console — clearly we should talk.\n' +
-        '%c → mihirchauhan951@gmail.com · github.com/Mihirchauhan0709',
+        '%c DILSHAD.ALI %c You opened the console — clearly we should talk.\n' +
+        '%c → dilshadali3d@gmail.com · github.com/Dilshadalii',
         'background:#1828CE;color:#F2F1EB;font-weight:bold;padding:4px 8px;',
         'color:inherit;padding:4px 0;',
         'color:#1828CE;padding:2px 0;'
@@ -709,7 +549,6 @@ function consoleEgg() {
 document.addEventListener('DOMContentLoaded', () => {
     renderExperience();
     renderFeatured();
-    renderAdditional();
     renderSkills();
     splitHeroName();
 
@@ -726,7 +565,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setupKineticName();
     consoleEgg();
 
-    // Choreography that should wait for the boot screen to lift
     runBoot(() => {
         setupSpecCard();
         setupReveals();
