@@ -292,7 +292,7 @@ function setupForm() {
                 from_email: form.elements.email.value.trim(),
                 message: form.elements.message.value.trim()
             };
-            const res = await emailjs.send('service_kys8jha', 'template_fwxmpwm', payload,
+            const res = await emailjs.send('service_kys8jha', 'template_0pjsd09', payload,
                 { publicKey: EMAILJS_PUBLIC_KEY });
             if (res.status === 200) {
                 status.textContent = '✓ MESSAGE SENT — I\'ll get back to you soon.';
