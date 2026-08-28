@@ -300,7 +300,7 @@ a { color: inherit; }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.45fr 1fr;
+    grid-template-columns: 1.45fr 300px;
     gap: clamp(1.5rem, 4vw, 3.5rem);
     align-items: start;
     margin-bottom: clamp(2rem, 5vh, 3rem);
@@ -330,11 +330,14 @@ a { color: inherit; }
 .spec-val { font-size: 0.98rem; font-weight: 500; }
 
 /* Photo */
-.hero-photo-wrap { position: relative; }
+.hero-photo-wrap { position: relative; max-width: 380px; justify-self: end; }
 .hero-photo {
     width: 100%;
     aspect-ratio: 4 / 4.6;
     object-fit: cover;
+    object-position: top;
+    transform: scale(1.15);
+    transform-origin: top center;
     border: 1px solid var(--line-strong);
     transition: transform 0.25s ease;
     will-change: transform;

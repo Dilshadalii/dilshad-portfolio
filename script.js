@@ -226,7 +226,7 @@ function setupForm() {
     // NOTE: This EmailJS key/service/template belong to Mihir's account —
     // the form will not actually send email until you set up your own
     // EmailJS account and replace these three values.
-    const EMAILJS_PUBLIC_KEY = 'GhFtq6Okk97dn7Uf5';
+    const EMAILJS_PUBLIC_KEY = 'qT6B6jLTTyUb-mg92';
     const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
     const validators = {
@@ -292,7 +292,7 @@ function setupForm() {
                 from_email: form.elements.email.value.trim(),
                 message: form.elements.message.value.trim()
             };
-            const res = await emailjs.send('service_692e32d', 'template_n3h2m8o', payload,
+            const res = await emailjs.send('service_kys8jha', 'template_fwxmpwm', payload,
                 { publicKey: EMAILJS_PUBLIC_KEY });
             if (res.status === 200) {
                 status.textContent = '✓ MESSAGE SENT — I\'ll get back to you soon.';
