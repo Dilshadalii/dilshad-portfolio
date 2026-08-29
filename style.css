@@ -274,6 +274,12 @@ a { color: inherit; }
     padding-top: clamp(7rem, 14vh, 10rem);
     padding-bottom: 0;
     position: relative;
+    background-image:
+        linear-gradient(90deg, var(--dark, #101116) 0%, var(--dark, #101116) 35%, rgba(16,17,22,0.55) 70%, rgba(16,17,22,0.25) 100%),
+        url("Images/university-bg.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 .hero-eyebrow {
@@ -373,6 +379,13 @@ a { color: inherit; }
     .hero-photo-wrap { max-width: 320px; }
     .spec-row { grid-template-columns: 110px 1fr; }
     .hero-links { margin-left: 0; width: 100%; }
+    .hero {
+        background-image:
+            linear-gradient(180deg, rgba(16,17,22,0.75) 0%, rgba(16,17,22,0.92) 60%, var(--dark, #101116) 100%),
+            url("Images/university-bg.jpg");
+        background-position: center top;
+        background-size: cover;
+    }
 }
 
 /* =====================================================
@@ -1116,4 +1129,32 @@ body.booted .hero-name .ch { transform: translateY(0); }
     .boot, .grain, .progress, .marquee, .contact-big { display: none; }
     body { background: #fff; color: #000; }
     .section-dark { background: #fff; color: #000; }
+}
+[data-theme="light"] .hero-eyebrow,
+[data-theme="light"] .hero-name,
+[data-theme="light"] .spec-key,
+[data-theme="light"] .spec-val,
+[data-theme="light"] .photo-caption {
+    color: var(--cream) !important;
+}
+[data-theme="light"] .spec-card {
+    border-top-color: var(--cream) !important;
+}
+[data-theme="light"] .spec-row {
+    border-bottom-color: rgba(242, 241, 235, 0.25) !important;
+}
+[data-theme="light"] .hero-actions .btn-ghost {
+    color: var(--cream) !important;
+    border-color: var(--cream) !important;
+}
+[data-theme="light"] .hero-actions .btn-ghost:hover {
+    background: var(--cream) !important;
+    color: var(--dark, #101116) !important;
+}
+[data-theme="light"] .hero-links .text-link {
+    color: var(--cream) !important;
+}
+[data-theme="light"] .hero-links .text-link:hover {
+    color: var(--blue) !important;
+    text-decoration: underline;
 }
