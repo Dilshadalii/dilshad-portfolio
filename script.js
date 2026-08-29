@@ -223,9 +223,7 @@ function setupForm() {
     const status = document.getElementById('form-status');
     if (!form) return;
 
-    // NOTE: This EmailJS key/service/template belong to Mihir's account —
-    // the form will not actually send email until you set up your own
-    // EmailJS account and replace these three values.
+
     const EMAILJS_PUBLIC_KEY = 'qT6B6jLTTyUb-mg92';
     const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
